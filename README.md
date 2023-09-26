@@ -1,0 +1,2 @@
+# hikorea-script
+ 
