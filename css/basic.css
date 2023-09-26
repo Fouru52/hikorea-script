@@ -1,0 +1,634 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+/* css에서 외부파일 연결 - 눈누에서 웹폰트 코드 복사해서 넣기*/
+
+
+body {
+  font-family: 'Pretendard-Light', 'Malgun Gothic', '맑은고딕', sans-serif; 
+  /* 폰트 설정한게 적용 안된다? 순차적으로 넘어가도록 설정 */
+  font-size: 14px;
+  line-height: 1.5;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+  background: transparent; /* 버튼 배경 없애주기 */
+}
+
+.img {
+  width: 100%;
+}
+
+.icon_hiko {
+  display: block;
+  background: url('../img/icons.png') no-repeat 0 0 / 700px 1000px;
+  font-size: 1px; /* text-indent: -999px; */
+  color: transparent;
+  line-height: 1; /* 드래그하면 글자보임 */
+}
+
+#container{
+  max-width: 640px;
+  min-width: 320px; 
+  margin: auto;        /* 반응형 모바일 페이지 설정 */
+}
+
+/****************** header ******************/
+header {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  max-width: 640px;
+  min-width: 320px; 
+  margin: auto;  /* 고정된 헤더 */
+  background: #fff;
+  z-index: 100;
+}
+
+h1 a {
+  display: block;
+  width: 70px;
+  height: 35px;
+  margin: 10px auto;
+}
+
+.top_left, .top_right{
+  position: absolute;
+  top: 6px;
+}
+.top_left{
+  left: 10px;
+}
+.top_right{
+  right: 10px;
+  line-height: 55px;
+}
+
+header button {
+  padding: 5px; 
+  /* 실제 버튼크기보다 마우스가 반응하는 영역을 넓히기 위해*/
+}
+.ico_gnb, .ico_lang, .ico_search {
+  width: 26px;
+  height: 26px;
+}
+
+.ico_search{
+  background:url('../img/serch.png') no-repeat center center / 24px 24px;
+  display: block;
+  font-size: 1px; 
+  color: transparent;
+  transition: 0.7s ease-in;
+}
+
+.ico_gnb {
+  background-position: -520px -60px;
+}
+.ico_lang {
+  background:url('../img/earth.png') center center / 26px 26px;
+  display: block;
+  font-size: 1px; 
+  color: transparent;
+}
+
+
+
+/****************** main ******************/
+
+#main_wrap{
+  height: 100%;
+  padding-top: 96px;
+  max-width: 640px;
+  min-width: 320px; 
+  margin: auto;
+}
+
+/****** main_hikorea ******/
+
+.main_hikorea {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.main_img{
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+  background: url('../img/people_tablet.png') no-repeat top right/ 399px 389px;
+  opacity: 50%;
+  padding: 0 20px;
+
+}
+.main_info{
+  position: absolute;
+  bottom: 180px;
+  padding: 0 20px;
+}
+.main_info h2{
+  margin-bottom: 110px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #FF0000;
+}
+.main_info h2 strong {
+  color: #102F52;
+  font-weight: 500;
+}
+
+.main_info span{
+  font-size: 14px;
+}
+
+.main_btns{
+  position: absolute;
+  bottom: 15px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+.main_btns button{
+  background: #102F52;
+  padding: 6px 25px;
+  margin: 2px 0;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 10px 0 0 10px;
+}
+.main_btns button:hover {
+  background: #FF0000;
+}
+
+
+/****** myCurrent ******/
+
+.myCurrent_border {
+  vertical-align: middle;
+  margin: 20px auto;
+  width: 96%;
+}
+
+.myCurrent_position {
+  display: flex;
+  justify-content: center;
+  column-gap: 80px;
+  align-items: center;
+  background: #102F52;
+  height: 200px;
+  border-radius: 20px;
+}
+.profile {
+  padding: 10px 0;
+}
+
+.profile img{
+  width: 110px;
+  height: 110px;
+  object-fit: center;
+  border-radius: 999px;
+  opacity: 80%;
+}
+.profile a{
+  text-align: center;
+  display: block;
+  font-size: 15px;
+  color: #fff;
+}
+.profile a:hover{
+  text-decoration: underline;
+}
+
+.profile_btns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_btns button {
+  background: #f5f2f2;
+  margin: 3px 0;
+  width: 160px;
+  padding: 2px 0;
+  border-radius: 8px 0 0 8px;
+  color: #102F52;
+}
+
+.profile_btns button:hover {
+  color: #FF0000;
+}
+
+/* 500보다 작을 때 - 모바일 상태*/
+@media (max-width:501px){
+  .myCurrent_position {
+    column-gap: 60px;
+  }
+}
+/* 430보다 작을 때 - 모바일 상태*/
+@media (max-width:429px){
+  .myCurrent_position {
+    column-gap: 40px;
+  }
+}
+/* 375보다 작을 때 - 모바일 상태*/
+@media (max-width:374px){
+  .myCurrent_border {
+    width: 300px;
+  }
+
+  .myCurrent_position {
+    background: #102F52;
+    height: 370px;
+    display: block;
+    padding: 10px 0;
+  }
+  .profile {
+    text-align: center;
+  }
+
+  .profile a{
+    font-size: 15px;
+    color: #fff;
+    display: block;
+  }
+  
+  .profile_btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile_btns button {
+    background: #f5f2f2;
+    margin: 3px 0;
+    width: 160px;
+    padding: 2px 0;
+    border-radius: 8px 0 0 8px;
+    color: #102F52;
+  }
+  
+  .profile_btns button:hover {
+    color: #FF0000;
+  }
+}
+
+
+
+
+/****** menu ******/
+
+.menu_wrap {
+  padding: 0 10px;
+  margin-top: 40px;
+}
+.menu_wrap h2, .etc_menu h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.often_menu_boundery {
+  background: #f1f1f1;
+  border-radius:24px;
+  display: flex;
+}
+.often_menu_boundery p {
+  font-weight: 500;
+  color: #102F52;
+
+}
+.often_menu_boundery button, .etc_menu_boundery button{
+  display: inline-block;
+  flex: 1;
+  padding: 10px 0;
+  font-size: 12px;
+}
+.often_menu_boundery img, .etc_menu_boundery img {
+  width: 40px; 
+  height: 40px;
+  margin-bottom: 5px;
+}
+.etc_menu_boundery p {
+  vertical-align: middle;
+  color: #102F52;
+}
+.etc_menu {
+  margin-top: 20px;
+}
+
+.etc_menu_boundery{
+  background: #dadada;
+  border-radius:24px;
+  display: flex;
+  align-items: center;
+}
+
+.often_menu_boundery button:hover {
+  border: 3px dashed #FF0000;
+  margin: -3px;
+}
+.often_menu_boundery .button_border1:hover {
+  border: 3px dashed #FF0000;
+  border-radius: 30px 0 0 30px;
+  margin: -3px;
+
+}
+.often_menu_boundery .button_border2:hover {
+  border: 3px dashed #FF0000;
+  border-radius: 0 30px 30px 0;
+  margin: -3px;
+
+}
+.etc_menu_boundery button:hover{
+  border: 3px dashed #102F52;
+  margin: -3px;
+
+}
+.etc_menu_boundery .button_border3:hover {
+  border: 3px dashed #102F52;
+  border-radius: 30px 0 0 30px;
+  margin: -3px;
+
+}
+.etc_menu_boundery .button_border4:hover {
+  border: 3px dashed #102F52;
+  border-radius: 0 30px 30px 0;
+  margin: -3px;
+
+}
+
+/* 350보다 작을 때 - 모바일 상태*/
+@media (max-width:349px){
+  .menu_wrap {
+    padding: 0;
+  }
+  .often_menu_boundery button, .etc_menu_boundery button {
+    font-size: 10px;
+  }
+  .often_menu_boundery, .etc_menu_boundery{
+    border-radius: 0;
+  }
+  .often_menu_boundery button:hover, .often_menu_boundery .button_border1:hover, .often_menu_boundery .button_border2:hover,.etc_menu_boundery button:hover,.etc_menu_boundery .button_border3:hover,.etc_menu_boundery .button_border4:hover {
+    border: 0;
+    margin: 0;
+  }
+  .often_menu_boundery button:hover p, .etc_menu_boundery button:hover p {
+    color: #FF0000;
+  }
+}
+
+
+
+
+/****** announcement ******/
+
+#announcement{
+  padding: 0 20px;
+  margin-top: 50px;
+  height: 250px;
+}
+
+.announce_btn{
+  background: #102F52;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 10px 10px 0 0;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 5px;
+}
+.announce_btn:hover{
+  background: #FF0000;
+}
+
+.tap .plus_btn{
+  background: none;
+  color: #111;
+  float: right;
+  transform: translateY(5px);
+}
+
+.tap .plus_btn img{
+  width: 18px;
+}
+
+.announce {
+  width: 100%;
+}
+.announce ul {
+  padding: 20px 0;
+  font-size: 16px;
+  border: 1px solid #dadada;
+  border-left: none;
+  border-right: none;
+  height: 180px;
+}
+.an_inner2, .an_inner3 {
+  display: none;
+}
+
+.announce ul li {
+  margin: 8px 0;
+  padding: 0 10px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.announce ul li a {
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.announce ul li span {
+  float: right;
+  font-size: 13px;
+  letter-spacing: 0;
+  color: gray;
+}
+
+.announce ul li a:hover {
+  text-decoration: underline;
+  color: #FF0000;
+}
+
+/* 320보다 작을 때 - 모바일 상태*/
+@media (max-width:321px){
+  .plus_btn img{
+    width: 15px;
+    }
+  }
+
+
+
+
+/****** quick btn ******/
+
+#quick_btn{
+  text-align: center;
+}
+#quick_btn button {
+  color: #102F52;
+  font-weight: 700;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+#quick_btn img {
+  width: 200px;
+  height: 240px;
+  border-radius: 10px;
+  object-fit: cover;
+  opacity: 75%;
+}
+
+
+
+/****** banner ******/
+
+#banner {
+  margin: 30px auto;
+}
+.banner_border1{
+  display: block;
+  background: #FF0000;
+  height: 2px;
+  border-radius: 10px 10px 0 0;
+  width: 66%;
+  margin: auto;
+}
+
+.banner_text {
+  background: #fffffe;
+  text-align: center;
+  padding: 10px 0;
+}
+.banner_text p{
+  font-size: 22px;
+  color: #102F52;
+}
+.banner_text .t_1 {
+  font-weight: 600;
+}
+.banner_text .t_2 {
+  font-weight: 800;
+  color: #FF0000;
+  margin-bottom: 10px;
+}
+
+.banner_text span{
+  font-size: 14px;
+  margin-left: 22px;
+  font-weight: 500;
+  color: #102F52;
+}
+.banner_text .t_3, .banner_text .t_4  {
+  font-size: 15px;
+  color: #111;
+  font-weight: 500;
+}
+
+.banner_text img{
+  width: 30%;
+  height: 30%;
+}
+
+.banner_border2{
+  display: block;
+  margin-top: 2px;
+  background:  #102F52;
+  height: 2px;
+  border-radius: 0 0 10px 10px;
+  width: 66%;
+  margin: auto;
+}
+
+/* 443보다 작을 때 - 모바일 상태*/
+@media (max-width:442px){
+  .banner_text .t_1 {
+    font-size: 20px;
+  }
+  .banner_text .t_2 {
+    font-size: 18px;
+
+  }.banner_text .t_3, .banner_text .t_4 {
+    font-size: 12px;
+  }
+  }
+
+
+
+/****************** footer ******************/
+
+footer{
+  color: #fff;
+  background: #102F52;
+  padding: 10px 20px;
+}
+.footer_boundery div {
+  margin: 8px 0;
+}
+
+.footer_sns img {
+  width: 26px;
+  height: 26px;
+}
+
+.footer_1 ul {
+  display: flex;
+}
+.footer_1 ul li{
+  float: left;
+  margin-right: 12px;
+  font-size: 15px;
+}
+.footer_1 a:hover {
+  text-decoration: underline;
+}
+
+.footer_sns {
+}
+.footer_sns a{
+  margin: 0 5px;
+}
+
+.footer_num {
+  font-size: 14px;
+}
+.footer_num .copy {
+  color: #b2b2b2;
+  font-size: 13px;
+}
+
+  /* 389보다 작을 때 - 모바일 상태*/
+  @media (max-width:390px){
+    footer{
+      padding: 10px;
+    }
+    .footer_1 ul li {
+      font-size: 13px;
+      margin-right: 8px;
+    }
+      .footer_num .copy {
+        color: #b2b2b2;
+        font-size: 11px;
+      }
+      .footer_num {
+        font-size: 11px;
+      }
+  }
+
+
+
+
+

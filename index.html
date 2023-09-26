@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HiKorea!</title>
+  <link rel="shortcut icon" href="img/korea.png" type="image/x-icon">
+  <!--파비콘 - png 파일/ 정사각형-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> <!-- swiper css--> 
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/sub.css">
+
+  <script src="https://kit.fontawesome.com/a1d9d85227.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> <!-- swiper script--> 
+  <script defer src="js/js.js"></script>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>
+        <a href="index.html" >
+          <img src="img/Logo.png" alt="hikorea" class="img">
+        </a>
+      </h1>
+      <div class="top_left">
+        <div class="gnbBtns">
+          <button class="gnbBtn_trigger">
+            <span class="icon_hiko ico_gnb">메뉴</span>
+          </button>
+        </div>
+      </div>
+      <div class="top_right">
+        <button class="search">
+          <span class="ico_search">검색</span>
+        </button>
+        <button class="gnbBtn_lang">
+          <span class="ico_lang">언어</span>
+        </button>
+      </div>
+    </header>
+    <div class="serch_sub">
+      <span>통합검색<img src="img/ico_close.png" alt=""></span>
+      <div>
+        <input type="text" placeholder="검색어를 입력하세요." maxlength="22">
+        <button>검색</button>
+      </div>
+    </div>
+    <div class="lang_sub">
+      <ul>
+        <li><a href="#">한국어</a></li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">中國語</a></li>
+        <li><a href="#">日本語</a></li>
+        <img class="lang_close" src="img/ico_close.png" alt="">
+      </ul>
+    </div>
+
+    <div id="main_wrap">
+      <div class="main_hikorea">
+        <div class="main_img"></div>
+        <div class="main_info">
+          <h2>Hi <strong>Korea!</strong></h2>
+          <span>대한민국을 찾는 외국인에게<br>출입국, 체류, 국적 등의 다양한 서비스를<br> 제공하기 위하여 법무부에서 운영 중인 포털입니다.</span>
+        </div>
+        <div class="main_btns">
+          <button>민원신청</button>
+          <button>방문예약</button>
+          <button>자동출입국심사</button>
+          <button>단기체류외국인 숙박신고</button>
+        </div>
+      </div>
+
+      <div class="myCurrent_border">
+        <div class="myCurrent_position">
+          <div class="profile">
+            <img src="img/people3.jpg" alt="my_profile">
+            <div class="pro_text">
+              <a href="#">나의 민원</a>
+              <a href="#">방문예약확인</a>
+            </div>
+          </div>
+          <div class="profile_btns">
+            <button>자진출국 사전신고</button>
+            <button>사증신청 결과조회</button>
+            <button>방문예약 신청현황</button>
+            <button>전자민원 신청현황</button>
+            <button>자동출입국심사신청</button>
+          </div>
+        </div>        
+      </div>
+
+      <div class="menu_wrap">
+        <h2>자주 찾는 메뉴</h2>
+        <div class="often_menu_boundery">
+          <button class="button_border1"><img src="img/often1.png" alt="often1"><p>이용안내</p></button>
+          <button><img src="img/often2.png" alt="often2"><p>민원서식</p></button>
+          <button><img src="img/often3.png" alt="often3"><p>법령지침정보</p></button>
+          <button><img src="img/often4.png" alt="often4"><p>신고의무</p></button>
+          <button class="button_border2"><img src="img/often5.png" alt="often5"><p>귀화면접심사</p></button>
+        </div>
+        <h2 class="etc_menu">기타 조회 서비스</h2>
+        <div class="etc_menu_boundery">
+          <button class="button_border3"><img src="img/etc01.png" alt="etc01"><p>체류 만료일</p></button>
+          <button><img src="img/etc02.png" alt="etc02"><p>등록증/거소증</p></button>
+          <button ><img src="img/etc03.png" alt="etc03"><p>지정 의료기관</p></button>
+          <button><img src="img/etc04.png" alt="etc04"><p>고용가능여부</p></button>
+          <button class="button_border4"><img src="img/etc05.png" alt="etc05"><p>관할 출입국</p></button>
+        </div>
+      </div>
+
+      <div id="announcement">
+        <div class="tap">
+          <div class="announce_btn btn1">공지사항</div>
+          <div class="announce_btn btn2">보도자료</div>
+          <div class="announce_btn btn3 ">뉴스레터</div>
+          <button class="plus_btn"><img src="img/plus.png" alt="plus" width="22px"></button>
+        </div>
+
+        <div class="announce an_inner1">
+          <ul>
+            <li>
+              <a href="https://www.hikorea.go.kr/board/BoardNtcDetailR.pt?BBS_SEQ_GB_CD=&BBS_SEQ=1&BBS_GB_CD=BS10&NTCCTT_SEQ=1573&page=1">외국인등록증 진위확인 서비스 시행 </a>
+              <span>2023.09.15</span>
+            </li>
+            <li>
+              <a href="https://www.hikorea.go.kr/board/BoardNtcDetailR.pt?BBS_SEQ_GB_CD=&BBS_SEQ=1&BBS_GB_CD=BS10&NTCCTT_SEQ=1571&page=1">출입국민원 대행기관 보수교육 취소 공고</a>
+              <span>2023.09.06</span>
+            </li>
+            <li>
+              <a href="https://www.hikorea.go.kr/board/BoardNtcDetailR.pt?BBS_SEQ_GB_CD=&BBS_SEQ=1&BBS_GB_CD=BS10&NTCCTT_SEQ=1569&page=1">2023년 9월 국적업무 처리기간 안내</a>
+              <span>2023.09.04</span>
+            </li>
+            <li>
+              <a href="https://www.hikorea.go.kr/board/BoardNtcDetailR.pt?BBS_SEQ_GB_CD=&BBS_SEQ=1&BBS_GB_CD=BS10&NTCCTT_SEQ=1567&page=2">임시공휴일 지정에 따른 알림</a>
+              <span>2023.08.31</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="announce an_inner2">
+          <ul>
+            <li>
+              <a href="#">9월18일부터 등록 외국인도 국민처럼 휴대폰으로 비대면 금융거래를 할 수 있습니다. </a>
+              <span>2023.09.18</span>
+            </li>
+            <li>
+              <a href="#">계절근로자 제도 운용 개선 경과</a>
+              <span>2023.09.12</span>
+            </li>
+            <li>
+              <a href="#">법무부, 2023년 불법체류 외국인 특별자진출국제도 한시 시행</a>
+              <span>2023.09.08</span>
+            </li>
+            <li>
+              <a href="#">법무부, ′23년 2차 불법체류 외국인 정부합동단속, 약 1만1천명 출국조치</a>
+              <span>2023.08.23</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="announce an_inner3">
+          <ul>
+            <li>
+              <a href="#">외국인 스타트업 간담회 개최 </a>
+              <span>2022.04.11</span>
+            </li>
+            <li>
+              <a href="#">이민정책 패러다임 전환 대토론회 개최</a>
+              <span>2022.01.17</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="quick_btn">
+        <button>
+          <img src="img/Q&A2.jpg" alt="Q&A">
+        </button>
+        <button>
+          <img src="img/paper.png" alt="form">
+        </button>
+      </div>
+
+      <div id="banner">
+        <div class="banner_border1">
+        </div>
+        <div class="banner_text">
+            <p class="t_1">외국인 종합 안내센터</p>
+            <p class="t_2">1345<span>(국번없이 : 유료)</span></p>
+            <p class="t_3">재한외국인 행정·생활 종합안내는</p>
+            <p class="t_4">다국어 지원 외국인종합안내를 이용하세요.</p>
+        </div>
+        <div class="banner_border2">
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer_boundery">
+          <div class="footer_1">
+            <ul>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">웹접근성정책</a></li>
+              <li><a href="#">관련사이트</a></li>
+              <li><a href="#">원격접속</a></li>
+            </ul>
+          </div>
+          <div class="footer_2">
+            <div class="footer_sns">
+              <a href="https://twitter.com/IMMIGRATION_KR"><img src="img/Twitter_logo.png" alt="트위터"></a>
+              <a href="https://www.facebook.com/immigration.kr"><img src="img/Facebook_icon.png" alt="페이스북"></a>
+            </div>
+            <div class="footer_num">
+              <p>FAX ) 02-2650-4550 </p>
+              <p>해외문의 ) +82-2-1345 / +82-2-6908-1345~6</p>
+              <p class="copy">Copyright ⓒ 2020 HI KOREA. All rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="topbtn">
+      <a href="#">
+        <img src="img/topbutton.png" alt="Topbtn">
+      </a>
+    </div>
+  </div>
+  
+  <div class="dark">
+  </div>
+
+  <div class="gnb">
+    <div class="inner">
+      <div class="info_user">
+        <a href="#" class="welcome log"><u>하이코리아</u>에 오신걸 <br>환영합니다!</a>
+        <div class="info_log_my">
+          <a href="login.html" class="info_login"><i class="fa-solid fa-star"></i> <span> Login</span></a>
+          <a href="#" class="info_my log"><i class="fa-solid fa-star"></i> <span> My page</span></a>
+        </div>
+      </div>
+      <ul class="list_menu">
+        <li>
+          <a href="#" class="btn_sub">
+            <span>민원신청</span>
+            <span class="icon_hiko icon_arrow_down">더보기</span>
+          </a>
+          <div class="list_sub">
+            <a href="#">전자민원</a>
+            <a href="#">방문예약</a>
+            <a href="#">온라인 상륙허가</a>
+            <a href="#">출입국민원 대행기관 이용</a>
+            <a href="#">출입국우대카드(기관담당자전용)</a>
+          </div>
+        </li>
+        <li class="line">
+          <a href="#" class="btn_sub">
+            <span>정보조회</span>
+            <span class="icon_hiko icon_arrow_down">더보기</span>
+          </a>
+          <div class="list_sub">
+            <a href="#">민원신청 결과</a>
+            <a href="#">기타 조회 서비스</a>
+          </div>
+        </li>
+        <li class="line">
+          <a href="#" class="btn_sub">
+            <span>자동출입국심사</span>
+            <span class="icon_hiko icon_arrow_down">더보기</span>
+          </a>
+          <div class="list_sub">
+            <a href="#">SeS 안내</a>
+            <a href="#">문의처(SeS)</a>
+            <a href="#">자동출입국심사 상호이용</a>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="btn_sub">
+            <span>정보광장</span>
+            <span class="icon_hiko icon_arrow_down">더보기</span>
+          </a>
+          <div class="list_sub">
+            <a href="#">고용지원</a>
+            <a href="#">사회통합</a>
+            <a href="#">투자이민</a>
+            <a href="#">투자지원</a>
+            <a href="#">기술창업이민</a>
+            <a href="#">국적/귀화안내</a>
+            <a href="#">한국생활 길잡이</a>
+            <a href="#">출입국/체류안내</a>
+            <a href="#">비자 내비게이터</a>
+            <a href="#">동포 맞춤형 길라잡이</a>
+            <a href="#">체류자격별 안내메뉴얼</a>
+            <a href="#">출입국관련 법령지침정보</a>
+          </div>
+        </li>
+        <li class="line">
+          <a href="#" class="btn_sub">
+            <span>뉴스·공지</span>
+            <span class="icon_hiko icon_arrow_down">더보기</span>
+          </a>
+          <div class="list_sub">
+            <a href="#">자료실</a>
+            <a href="#">공지사항</a>
+            <a href="#">보도자료</a>
+            <a href="#">민원서식</a>
+            <a href="#">뉴스레터</a>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="btn_sub">
+            <span>이용안내</span>
+            <span class="icon_hiko icon_arrow_right"></span></a>
+        </li>
+        <li class="line">
+          <a href="#" class="btn_sub">
+            <span>고객센터</span>
+            <span class="icon_hiko icon_arrow_right"></span></a>
+        </li>
+      </ul>
+      <div class="box_banner">
+        <a href="#"><img src="img/banner_1.jpg" alt="banner"></a>
+      </div>
+      <a href="login.html" class="link_login">
+        <span class="icon_hiko icon_lock">더보기</span>
+        <span class="link_login_text">로그인</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="loginPop">
+    <img src="img/login pop.jpg" alt="loninhelp">
+    <strong>로그인</strong>
+    <p>하시면 도와드리겠습니다!</p>
+    <a href="login.html">
+      <button class="login_btn">
+        로그인하기
+      </button>
+    </a>
+    <button class="close">
+      <span class="icon_close">닫기</span>
+    </button>
+  </div>
+
+  <div class="topbtn">
+    <a href="#">
+      <img src="img/topbutton.png" alt="Topbtn">
+    </a>
+</div>
+</body>
+</html>
