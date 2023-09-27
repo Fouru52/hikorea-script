@@ -23,6 +23,11 @@ dark.onclick = () => {
   list_sub[2].style.height = '0';
   list_sub[3].style.height = '0';
   list_sub[4].style.height = '0';
+  btn_subArrow[0].classList.remove('on');
+  btn_subArrow[1].classList.remove('on');
+  btn_subArrow[2].classList.remove('on');
+  btn_subArrow[3].classList.remove('on');
+  btn_subArrow[4].classList.remove('on');
 }
 
 // gnb 내의 서브메뉴 열기/닫기
