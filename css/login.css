@@ -48,6 +48,14 @@
   color: #abaaaa;
 }
 
+.login_id input:focus {
+  border-color: #FF0000;
+}
+
+.login_password input:focus {
+  border-color: #FF0000;
+}
+
 .login_submit {
   width: 100%;
   height: 40px;
